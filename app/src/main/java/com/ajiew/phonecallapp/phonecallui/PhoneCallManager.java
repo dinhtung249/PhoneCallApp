@@ -24,6 +24,7 @@ public class PhoneCallManager {
 
     /**
      * 接听电话
+     *answer the phone
      */
     public void answer() {
         if (call != null) {
@@ -34,6 +35,7 @@ public class PhoneCallManager {
 
     /**
      * 断开电话，包括来电时的拒接以及接听后的挂断
+     *Disconnect calls, including rejecting incoming calls and hanging up after answering
      */
     public void disconnect() {
         if (call != null) {
@@ -43,6 +45,7 @@ public class PhoneCallManager {
 
     /**
      * 打开免提
+     *Turn on handsfree
      */
     public void openSpeaker() {
         if (audioManager != null) {
@@ -53,6 +56,7 @@ public class PhoneCallManager {
 
     /**
      * 销毁资源
+     *destroy resources
      * */
     public void destroy() {
         call = null;
